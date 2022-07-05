@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+
+/*font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+*{
+	box-sizing: border-box;
+}
+
+
+
+body{
+	margin:0;
+	
+	background:	#4F4F4F;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+	font-size:40px;
+}
+
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+.header{
+	height:60px;
+	background: black;
+}
+
+
+
+.header .conteudo{
+	display:flex;
+	justify-content: space-between;
+}
+
+.conteudo{
+	margin:auto;
+	width:99%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.logo{
+	margin-top:20px;
+}
+
+
+.logo, .icon-menu{
+	margin:5px;
+	color:#FFF;
+
+}
+
+.icon-menu{
+	display:block;
+	width:40px;
+	height:40px;
+	font-size:30px;
+	background:#FBA919;
+	text-align:center;
+	line-height:45px;
+	border-radius:5px;
+	margin-left:auto;
+	cursor:pointer;
+	
+}
+
+
+.nav{
+	position:absolute;
+	top:60px;
+	left:-100%;
+	width:100%;
+	transition:0.5s;
+}
+
+
+.menu{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+
+
+
+.menu_link{
+	display:block;
+	padding: 15px;
+	background: #FBA919;
+	text-decoration: none;
+	color:#FFF;
+}
+
+
+.menu_link:hover{
+	background: white;
+	color:#FBA919;
+}
+
+.mostrar{
+	left:0%;
+}
+
+
+.banner_titulo{
+
+}
+
+.banner .conteudo{
+	position: absolute;
+	top:45%;
+	left: 2.5%;
+	color:white;
+	width: 95%;
+	text-align: center;
+
+	}
+
+.banner_titulo{
+	font-size:35px;
+}
+
+
+
+.banner_txt{
+	display:none;
+	color:#FFFF00;
+
+}
+
+
+.info_coluna{
+	background: #FBA919;
+	color:white;
+	padding:15px;
+	margin:15px;
+}
+
+.categoria_coluna{
+	position: relative;
+	margin-bottom:30px;
+	margin: 15px;
+
+}
+
+.categoria_descricao{
+	position: absolute;
+	
+	left:0%;
+	color:white;
+	background: rgba(0,0,0,0.6);
+	bottom:0.6%;
+	width: 60%;
+	height:50%;
+	padding: 5px;
+
+}
+
+.categoria_titulo{
+	font-size:30px;
+	margin: 5px 0;
+
+}
+
+.section_titulo{
+	text-align: center;
+	font-size: 40px;
+	color:#FBA919;
+}
+
+.footer{
+	background: black;
+	color: white;
+	padding: 15px;
+	text-align: center;
+}
+
+.social [class^=icon-]{
+	display:inline-block;
+	color:#333;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width:50px;
+	height: 50%;
+	line-height: 40px;
+}
+
+/*APLICANDO MEDIA QUERY PARA SITES RESPONSIVOS*/
+@media(min-width:480px){
+	.logo{
+		font-size: 40px;
+	}
+
+	.banner_titulo{
+		font-size: 30px;
+		margin: 7px 0;
+	}
+
+
+	.banner_txt{
+		display:block;
+		font-size: 16px;
+		margin:5px 0;
+	}
+
+
+	.info, .cursos{
+		display:flex;
+		justify-content: space-between;
+	}
+}
+
