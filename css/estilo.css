@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6{
 img{
 	display: block;
 	max-width: 100%;
+	
 }
 
 .header{
@@ -196,6 +197,10 @@ img{
 	width:50px;
 	height: 50%;
 	line-height: 40px;
+}
+
+.info_titulo{
+	text-align: center;
 }
 
 /*APLICANDO MEDIA QUERY PARA SITES RESPONSIVOS*/
